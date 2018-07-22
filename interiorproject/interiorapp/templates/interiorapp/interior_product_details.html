@@ -1,10 +1,14 @@
+{% load static %}
+
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Interior product details</title>
-    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Interior</title>
+<!--    <link rel="stylesheet" href="/static/css/style.css">-->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 
 <body>
@@ -12,16 +16,33 @@
         <div title="" class="all-top">
             <div class="slider_top_product_details padding_site">
                 <div class="header">
-                    <a class="logo" href="index.html">
+                    <a class="logo" href="{% url 'main' %}">
                     <img src="/static/img/logo.png" alt="Логотип">
                 </a>
+                
+                
+                
+            <ul class="main_menu header_menu">
+                {% for link in main_menu %}
+                <li>
+                    <a href="{% url link.href %}" class="{% if request.resolver_match.url_name == link.href %} 
+                           activ_link 
+                       {% endif %}">
+                        {{ link.name }}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>                   
+                
+<!--
                     <ul class="header_menu">
-                        <li><a href="/">HOME</a></li>
-                        <li><a class="activ_link" href="/product/">PRODUCTS</a></li>
+                        <li><a href="{% url 'main' %}">HOME</a></li>
+                        <li><a class="activ_link" href="{% url 'product' %}">PRODUCTS</a></li>
                         <li><a href="#">HISTORY</a></li>
                         <li><a href="#">SHOWROOM</a></li>
-                        <li><a href="/contact/">CONTACT</a></li>
+                        <li><a href="{% url 'contact' %}">CONTACT</a></li>
                     </ul>
+-->
                 </div>
             </div>
             <ul class="header_menu header_menu_product_details">
