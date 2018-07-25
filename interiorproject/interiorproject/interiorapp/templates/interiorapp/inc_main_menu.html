@@ -1,0 +1,15 @@
+{% block main_menu %}
+
+<ul class="main_menu header_menu">
+    {% for link in main_menu %}
+    <li>
+        <a href="{% url link.href %}" class="{% if request.resolver_match.url_name == link.href %} 
+                           activ_link 
+                       {% endif %}">
+                        {{ link.name }}
+                    </a>
+    </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

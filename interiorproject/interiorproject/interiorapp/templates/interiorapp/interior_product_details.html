@@ -1,0 +1,154 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Interior</title>
+<!--    <link rel="stylesheet" href="/static/css/style.css">-->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <div class="container">
+        <div title="" class="all-top">
+            <div class="slider_top_product_details padding_site">
+                <div class="header">
+                    <a class="logo" href="{% url 'main' %}">
+                    <img src="/static/img/logo.png" alt="Логотип">
+                </a>
+                
+                
+                
+            <ul class="main_menu header_menu">
+                {% for link in main_menu %}
+                <li>
+                    <a href="{% url link.href %}" class="{% if request.resolver_match.url_name == link.href %} 
+                           activ_link 
+                       {% endif %}">
+                        {{ link.name }}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>                   
+                
+<!--
+                    <ul class="header_menu">
+                        <li><a href="{% url 'main' %}">HOME</a></li>
+                        <li><a class="activ_link" href="{% url 'product' %}">PRODUCTS</a></li>
+                        <li><a href="#">HISTORY</a></li>
+                        <li><a href="#">SHOWROOM</a></li>
+                        <li><a href="{% url 'contact' %}">CONTACT</a></li>
+                    </ul>
+-->
+                </div>
+            </div>
+            <ul class="header_menu header_menu_product_details">
+                <li><a href="#">ALL</a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">OFFICE</a></li>
+                <li><a href="#">FURNITURE</a></li>
+                <li><a href="#">MODERN</a></li>
+                <li><a href="#">CLASSIC</a></li>
+            </ul>
+
+            <div class="product_details padding_site">
+                <div class="img_product_details">
+                    <a href="img/slider1.jpg" target="_blank"><img src="img/slider1.jpg" alt="" ></a>
+                </div>
+                <div class="text_product_details">
+                    <h2>Fishnet Chair</h2>
+                    <h4>Hot Deal</h4>
+                    <h1>$ 36.7/sq</h1>
+                    <a class="order_us order_us_product_details" href="#">Order us &gt;</a>
+                    <p>Seat and back with upholstery made of cold cure foam. Steel frame, available in matt</p>
+                    <p>Seat and back with upholstery made of cold cure foam. Steel frame, available in matt</p>
+                    <p>The majesty of Mountains - Ugmonk style. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                    <p>Seat and back with upholstery made of cold cure foam. Steel frame, available in matt</p>
+                </div>
+            </div>
+
+            <div class="trending_products">
+                <h3>Related Products</h3>
+                <a class="explore_all " href="interior_product.html">explore all &gt;</a>
+            </div>
+            <div class="trending_img padding_site">
+                <a href="interior_product_details.html" target="_blank"> 
+                <img class="trending_img_product select" src="img/product-11.jpg" alt="">  
+            </a>
+                <a href="interior_product_details.html" target="_blank"> 
+                <img class="trending_img_product select" src="img/product-21.jpg" alt="">  
+            </a>
+                <a href="interior_product_details.html" target="_blank"> 
+                <img class="trending_img_product select" src="img/product-31.jpg" alt="">  
+            </a>
+                <a href="interior_product_details.html" target="_blank"> 
+                <img class="trending_img_product select" src="img/product-11.jpg" alt="">  
+            </a>
+                <a href="interior_product_details.html" target="_blank"> 
+                <img class="trending_img_product select" src="img/product-21.jpg" alt="">  
+            </a>
+                <a href="interior_product_details.html"> 
+                <img class="trending_img_product select" src="img/product-31.jpg" alt="">  
+            </a>
+            </div>
+
+        </div>
+        <div class="footer">
+            <div class="block_footer_top">
+                <div class="contact_us">
+                    <h3>Contact Us</h3>
+                    <p>132A Bridge Road Richmond VIC Australia.</p>
+                    <p>Talk to us on 1300 132 info@interior.com</p>
+                </div>
+
+                <div class="useful_information">
+                    <h3>Useful Information</h3>
+                    <div class="block_useful_information_href">
+
+                        <div class="useful_information_href">
+                            <a href="#">sales terms</a>
+                            <a href="#">customer care</a>
+                            <a href="#">delivery</a>
+                        </div>
+                        <div class="useful_information_href">
+                            <a href="#">architect accounty</a>
+                            <a href="#">careers</a>
+                            <a href="#">exchanges &amp; returns</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="stay_in_touch">
+                    <h3>Let’s Stay in Touch!</h3>
+                    <p>Suscribe to know about our latest news, products and special offers just for suscribers.</p>
+                    <div>
+                        <form action="#">
+                            <input type="email" placeholder="your email address"><button><img class="button_img" src="img/telegram.png" alt=""></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block_footer_bottom">
+                <p>&copy; Copyright - INTERIOR 2016. All Rights Reserved.</p>
+                <!--                <img src="img/social-links.jpg" alt="">-->
+                <div class="social_link">
+                    <a href="#" class="social_link_circle"></a>
+                    <a href="#" class="social_link_circle"></a>
+                    <a href="#" class="social_link_circle"></a>
+                    <a href="#" class="social_link_circle"></a>
+                </div>
+                <p>Terms & Conditions / Privacy policy & Cookies</p>
+            </div>
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>
