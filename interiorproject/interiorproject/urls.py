@@ -19,23 +19,21 @@ from django.conf.urls import url, include
 from django.conf import settings
 from django.conf.urls.static import static
 
-
-
-
 import interiorapp.views as interiorapp
+
 
 # urlpatterns = [
 #     path('admin/', admin.site.urls),
 # ]
 
-urlpatterns = [
+urlpatterns = (
     url(r'^$', interiorapp.main, name='main'),
     url(r'^product_details/', interiorapp.product_details, name='product_details'),
     url(r'^product/', interiorapp.product, name='product'),
     url(r'^contact/', interiorapp.contact, name='contact'),
-    url(r'^admin/', admin.site.urls)
-]
-
+    url(r'^admin/', admin.site.urls),
+    # url(r'^auth/', include('authapp.urls', namespace='urls')),
+)
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
