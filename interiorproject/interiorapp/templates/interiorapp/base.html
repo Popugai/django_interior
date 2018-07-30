@@ -1,0 +1,92 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Interior</title>
+    {% block css %}
+        <link rel="stylesheet" href="{% static 'css/style.css' %}"> 
+    {% endblock %}
+</head>
+
+<body>
+    <div class="container">
+        <div title="" class="all-top">
+{% block container %} 
+
+            {% block logo_main_menu %}
+                <div class="header">
+                    <a class="logo" href="{% url 'main' %}">
+                    <img src="/static/img/logo.png" alt="Логотип">
+                </a>
+                    {% include 'interiorapp/inc_main_menu.html' %}
+                </div>
+            {% endblock %} 
+
+{% block contact_adress %}
+{% endblock %}
+       
+{% block footer %}
+        <div class="footer">
+            <div class="block_footer_top">
+                <div class="contact_us">
+                    <h3>Contact Us</h3>
+                    <p>132A Bridge Road Richmond VIC Australia.</p>
+                    <p>Talk to us on 1300 132 info@interior.com</p>
+                </div>
+
+                <div class="useful_information">
+                    <h3>Useful Information</h3>
+                    <div class="block_useful_information_href">
+
+                        <div class="useful_information_href">
+                            <a href="#">sales terms</a>
+                            <a href="#">customer care</a>
+                            <a href="#">delivery</a>
+                        </div>
+                        <div class="useful_information_href">
+                            <a href="#">architect accounty</a>
+                            <a href="#">careers</a>
+                            <a href="#">exchanges &amp; returns</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="stay_in_touch">
+                    <h3>Let’s Stay in Touch!</h3>
+                    <p>Suscribe to know about our latest news, products and special offers just for suscribers.</p>
+                    <div>
+                        <form action="#">
+                            <input type="email" placeholder="your email address"><button><img class="button_img" src="/static/img/telegram.png" alt=""></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block_footer_bottom">
+                <p>&copy; Copyright - INTERIOR 2018. All Rights Reserved.</p>
+                <div class="social_link">
+                    <a href="#" class="social_link_circle"></a>
+                    <a href="#" class="social_link_circle"></a>
+                    <a href="#" class="social_link_circle"></a>
+                    <a href="#" class="social_link_circle"></a>
+                </div>
+                <p>Terms & Conditions / Privacy policy & Cookies</p>
+            </div>
+
+
+        </div>            
+{% endblock %}
+
+{% endblock %}       
+        </div>
+
+    </div>
+    
+</body>
+
+</html>
