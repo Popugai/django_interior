@@ -1,0 +1,55 @@
+{% extends 'interiorapp/base.html' %} 
+
+{% load static %} 
+
+{% block container %}
+
+<div class="slider_top_product padding_site">
+   
+    {% block logo_main_menu %}{{block.super}}
+    {% endblock %}
+    
+    <div class="slider_text slider_text_product">
+        <h2>Contact Us</h2>
+    </div>
+</div>
+
+{% block contact_adress %}
+<div class="contact padding_site">
+    <div class="contact_adress">
+        <img src="/static/img/Flag.jpg" alt="">
+        <h2>California</h2>
+        <h4 class="header_h4">Phone:</h4>
+        <h4>1900 - 1234 -5678</h4>
+        <h4 class="header_h4">Email:</h4>
+        <h4>info@interior.com</h4>
+        <h4 class="header_h4">Address:</h4>
+        <p>12 W 1st St, 90001 Los Angeles, California</p>
+    </div>
+    <div class="contact_adress">
+        <img src="/static/img/Flag.jpg" alt="">
+        <h2>California</h2>
+        <h4 class="header_h4">Phone:</h4>
+        <h4>1900 - 1234 -5678</h4>
+        <h4 class="header_h4">Email:</h4>
+        <h4>info@interior.com</h4>
+        <h4 class="header_h4">Address:</h4>
+        <p>12 W 1st St, 90001 Los Angeles, California</p>
+    </div>
+    <div class="contact_adress">
+        <img src="/static/img/Flag.jpg" alt="">
+        <h2>California</h2>
+        <h4 class="header_h4">Phone:</h4>
+        <h4>1900 - 1234 -5678</h4>
+        <h4 class="header_h4">Email:</h4>
+        <h4>info@interior.com</h4>
+        <h4 class="header_h4">Address:</h4>
+        <p>12 W 1st St, 90001 Los Angeles, California</p>
+    </div>
+</div>
+{% endblock %} 
+
+{% block footer %}{{block.super}}
+{% endblock %}
+
+{% endblock %}
