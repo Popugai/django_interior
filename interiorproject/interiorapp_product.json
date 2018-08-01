@@ -1,0 +1,112 @@
+[
+    {
+        "category_id": "3",
+        "description": "Часы настенные",
+        "flag": "featured",
+        "id": "2",
+        "image": "products_images/product-1.jpg",
+        "name": "Clock",
+        "price": "1500",
+        "quantity": "5",
+        "short_desc": "Часы"
+    },
+    {
+        "category_id": "1",
+        "description": "Стулья синего цвета для дома (комплект из 2 штук)",
+        "flag": "featured",
+        "id": "3",
+        "image": "products_images/product-2.jpg",
+        "name": "Blue chairs",
+        "price": "15000",
+        "quantity": "3",
+        "short_desc": "Стулья синего цвета"
+    },
+    {
+        "category_id": "3",
+        "description": "Чайник электрический с системой защиты от перегрузок",
+        "flag": "featured",
+        "id": "4",
+        "image": "products_images/product-3.jpg",
+        "name": "Kettle",
+        "price": "800",
+        "quantity": "10",
+        "short_desc": "Чайник электрический"
+    },
+    {
+        "category_id": "4",
+        "description": "Элегантное кресло красного цвета",
+        "flag": "",
+        "id": "5",
+        "image": "products_images/product-4.jpg",
+        "name": "Fishnet Chair",
+        "price": "3000",
+        "quantity": "2",
+        "short_desc": "Кресло красного цвета"
+    },
+    {
+        "category_id": "3",
+        "description": "Ступка с пестиком для перетирания",
+        "flag": "",
+        "id": "6",
+        "image": "products_images/product-5.jpg",
+        "name": "Mortar",
+        "price": "500",
+        "quantity": "10",
+        "short_desc": "Ступка"
+    },
+    {
+        "category_id": "4",
+        "description": "Настольная декоративная ваза",
+        "flag": "tranding",
+        "id": "7",
+        "image": "products_images/product-6.jpg",
+        "name": "Decorative vase",
+        "price": "650",
+        "quantity": "2",
+        "short_desc": "Декоративная ваза"
+    },
+    {
+        "category_id": "4",
+        "description": "Интерьерный потолочный светильник в стиле модерн",
+        "flag": "",
+        "id": "8",
+        "image": "products_images/product-11.jpg",
+        "name": "Ceiling lamp",
+        "price": "2100",
+        "quantity": "4",
+        "short_desc": "Светильник потолочный"
+    },
+    {
+        "category_id": "5",
+        "description": "Классическое кресло белого цвета",
+        "flag": "tranding",
+        "id": "9",
+        "image": "products_images/product-21.jpg",
+        "name": "Classic armchair",
+        "price": "1200",
+        "quantity": "20",
+        "short_desc": "Кресло белого цвета"
+    },
+    {
+        "category_id": "4",
+        "description": "Изысканная настольная лампа",
+        "flag": "tranding",
+        "id": "10",
+        "image": "products_images/product-31.jpg",
+        "name": "Table lamp",
+        "price": "1400",
+        "quantity": "15",
+        "short_desc": "Лампа настольная"
+    },
+    {
+        "category_id": "5",
+        "description": "Классическая настенная лампа для спальных комнат",
+        "flag": "tranding",
+        "id": "11",
+        "image": "products_images/product-41.jpg",
+        "name": "Wall lamp",
+        "price": "780",
+        "quantity": "30",
+        "short_desc": "Лампа настенная"
+    }
+]

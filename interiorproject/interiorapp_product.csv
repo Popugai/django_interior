@@ -1,0 +1,11 @@
+id,name,image,short_desc,description,price,quantity,category_id,flag
+2,Clock,products_images/product-1.jpg,Часы,Часы настенные,1500,5,3,featured
+3,Blue chairs,products_images/product-2.jpg,Стулья синего цвета,Стулья синего цвета для дома (комплект из 2 штук),15000,3,1,featured
+4,Kettle,products_images/product-3.jpg,Чайник электрический,Чайник электрический с системой защиты от перегрузок,800,10,3,featured
+5,Fishnet Chair,products_images/product-4.jpg,Кресло красного цвета,Элегантное кресло красного цвета,3000,2,4,
+6,Mortar,products_images/product-5.jpg,Ступка,Ступка с пестиком для перетирания,500,10,3,
+7,Decorative vase,products_images/product-6.jpg,Декоративная ваза,Настольная декоративная ваза,650,2,4,tranding
+8,Ceiling lamp,products_images/product-11.jpg,Светильник потолочный,Интерьерный потолочный светильник в стиле модерн,2100,4,4,
+9,Classic armchair,products_images/product-21.jpg,Кресло белого цвета,Классическое кресло белого цвета,1200,20,5,tranding
+10,Table lamp,products_images/product-31.jpg,Лампа настольная,Изысканная настольная лампа,1400,15,4,tranding
+11,Wall lamp,products_images/product-41.jpg,Лампа настенная,Классическая настенная лампа для спальных комнат,780,30,5,tranding
